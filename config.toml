@@ -1,5 +1,111 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://anthonycriscione.com/"
+languageCode = "en-us"
+title = "Anthony Criscione"
+copyright = "&copy; Anthony Criscione 2022"
 
 theme = "compost"
+
+
+# required
+[build]
+  _merge = "deep"
+  # Used by PurgeCSS
+  writeStats = true
+
+# required
+[markup]
+_merge = "deep"
+
+# for better seo
+[minify]
+  _merge = "deep"
+  # improve seo
+  keepQuotes = true
+
+[minify.tdewolff]
+[minify.tdewolff.html]
+# improve seo
+keepQuotes = true
+
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = false
+enableEmoji = true
+enableRobotsTXT = true
+paginate = 5
+
+# Uncomment for analytics
+# googleAnalytics = "G-MEASUREMENT_ID"
+
+[author]
+  name = "Anthony Criscione"
+  image = "/android-chrome-192x192.png"
+  bio = "A little bit about you"
+  links = [
+    { email = "mailto:contact@anthonycriscione.com" },
+#    { link = "https://link-to-some-website.com/" },
+#    { codepen = "https://codepen.io/username" },
+#    { dev = "https://dev.to/username" },
+#    { discord = "https://discord.gg/invitecode" },
+#    { dribbble = "https://dribbble.com/username" },
+#    { facebook = "https://facebook.com/username" },
+#    { foursquare = "https://foursquare.com/username" },
+    { github = "https://github.com/arc32x" },
+#    { gitlab = "https://gitlab.com/username" },
+#    { instagram = "https://instagram.com/username" },
+#    { keybase = "https://keybase.io/username" },
+#    { lastfm = "https://lastfm.com/user/username" },
+    { linkedin = "https://linkedin.com/in/anthony-criscione-uuid" },
+#    { mastodon = "https://mastodon.instance/@username" },
+#    { medium = "https://medium.com/username" },
+#    { pinterest = "https://pinterest.com/username" },
+#    { reddit = "https://reddit.com/user/username" },
+#    { slack = "https://workspace.url/team/userid" },
+#    { snapchat = "https://snapchat.com/add/username" },
+#    { soundcloud = "https://soundcloud.com/username" },
+#    { steam = "https://steamcommunity.com/profiles/userid" },
+#    { tiktok = "https://tiktok.com/@username" },
+#    { twitch = "https://twitch.tv/username" },
+#    { twitter = "https://twitter.com/username" },
+#    { youtube = "https://youtube.com/username" },
+#    { weibo = "https://weibo.com/n/username" },
+  ]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  colorScheme = "auto"
+  logo = ""
+
+[params.homepage]
+  showRecent = true
+
+[params.article]
+  showBreadcrumbs = true
+  showEdit = true
+  editURL = "https://github.com/canstand/compost/tree/main/exampleSite/content/"
+  editAppendPath = true
+
+[[menu.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 10
+
+[[menu.main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
+
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/arc32x"
+  weight = 30
