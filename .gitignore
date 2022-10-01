@@ -1,8 +1,11 @@
 # Dependencies
-node_modules/
+/node_modules/
+package.hugo.json
+package-lock.json
+package.json
 
 # Hugo-generated files
-public/
-resources/_gen/
+/public/
+/resources/_gen/
 hugo_stats.json
 .hugo_build.lock
