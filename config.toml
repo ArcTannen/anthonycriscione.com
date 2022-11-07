@@ -30,7 +30,6 @@ keepQuotes = true
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-hasCJKLanguage = false
 enableEmoji = true
 enableRobotsTXT = true
 paginate = 5
@@ -90,22 +89,22 @@ paginate = 5
   editURL = "https://github.com/canstand/compost/tree/main/exampleSite/content/"
   editAppendPath = true
 
-[[menu.main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 1
+#[[menu.main]]
+#  name = "Home"
+#  pageRef = "/"
+#  weight = 1
 
 [[menu.main]]
   name = "Blog"
   pageRef = "posts"
-  weight = 10
+  weight = 1
 
 [[menu.main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 20
+  weight = 10
 
 [[menu.main]]
   name = "GitHub"
   url = "https://github.com/arc32x"
-  weight = 30
+  weight = 20
